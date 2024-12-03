@@ -1,0 +1,49 @@
+2024-11-01 09:34:10.703 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-01 09:34:10.750 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-01 09:34:10.755 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-01 09:34:10.757 +08:00 [INF] Hosting environment: Development
+2024-11-01 09:34:10.758 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-01 09:34:19.861 +08:00 [INF] HTTP GET /api/Countries responded 200 in 1073.1144 ms
+2024-11-01 09:47:20.839 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-01 09:47:20.894 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-01 09:47:20.900 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-01 09:47:20.902 +08:00 [INF] Hosting environment: Development
+2024-11-01 09:47:20.904 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-01 09:48:45.587 +08:00 [INF] HTTP PUT /api/Countries/6 responded 400 in 226.7607 ms
+2024-11-01 09:49:01.269 +08:00 [INF] HTTP PUT /api/Countries/6 responded 204 in 1050.8808 ms
+2024-11-01 09:49:08.975 +08:00 [INF] HTTP GET /api/Countries responded 200 in 288.8292 ms
+2024-11-01 10:27:10.099 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-01 10:27:10.173 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-01 10:27:10.194 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-01 10:27:10.198 +08:00 [INF] Hosting environment: Development
+2024-11-01 10:27:10.200 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-01 10:27:29.823 +08:00 [INF] HTTP GET /api/Countries responded 200 in 899.3396 ms
+2024-11-01 10:27:38.245 +08:00 [INF] HTTP DELETE /api/Countries/6 responded 204 in 250.8493 ms
+2024-11-01 10:57:57.689 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-01 10:57:57.763 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-01 10:57:57.771 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-01 10:57:57.775 +08:00 [INF] Hosting environment: Development
+2024-11-01 10:57:57.807 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-01 10:59:55.249 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-01 10:59:55.297 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-01 10:59:55.302 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-01 10:59:55.304 +08:00 [INF] Hosting environment: Development
+2024-11-01 10:59:55.305 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-01 11:00:22.604 +08:00 [INF] HTTP POST /api/Countries responded 201 in 932.1357 ms
+2024-11-01 11:22:11.237 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-01 11:22:11.277 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-01 11:22:11.282 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-01 11:22:11.284 +08:00 [INF] Hosting environment: Development
+2024-11-01 11:22:11.284 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-01 11:22:27.683 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-01 11:22:27.775 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-01 11:22:27.782 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-01 11:22:27.784 +08:00 [INF] Hosting environment: Development
+2024-11-01 11:22:27.785 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-01 11:22:50.772 +08:00 [INF] Application is shutting down...
+2024-11-01 11:23:03.928 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-01 11:23:03.990 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-01 11:23:03.997 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-01 11:23:03.999 +08:00 [INF] Hosting environment: Development
+2024-11-01 11:23:04.001 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-01 11:23:50.593 +08:00 [INF] HTTP POST /api/Countries responded 201 in 1222.8010 ms

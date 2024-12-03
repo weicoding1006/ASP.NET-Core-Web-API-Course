@@ -1,0 +1,604 @@
+2024-11-27 09:22:33.841 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-27 09:22:33.887 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-27 09:22:33.894 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-27 09:22:33.896 +08:00 [INF] Hosting environment: Development
+2024-11-27 09:22:33.897 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-27 09:22:36.956 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/Countries" for actions - WebApplication1.Controllers.CountriesController.GetCountries (WebApplication1),WebApplication1.Controllers.CountriesController.GetPagedCountries (WebApplication1). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-11-27 09:24:23.802 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-27 09:24:23.836 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-27 09:24:23.839 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-27 09:24:23.840 +08:00 [INF] Hosting environment: Development
+2024-11-27 09:24:23.841 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-27 09:24:29.085 +08:00 [ERR] HTTP GET /api/Countries responded 500 in 421.5443 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WebApplication1.Repository.GenericRepository`1.GetAllAsync()
+   at WebApplication1.Controllers.CountriesController.GetCountries() in C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1\Controllers\CountriesController.cs:line 34
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at WebApplication1.Program.<>c.<<Main>b__0_8>d.MoveNext() in C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1\Program.cs:line 150
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-11-27 09:24:29.100 +08:00 [ERR] 錯誤來自:/api/Countries
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WebApplication1.Repository.GenericRepository`1.GetAllAsync()
+   at WebApplication1.Controllers.CountriesController.GetCountries() in C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1\Controllers\CountriesController.cs:line 34
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at WebApplication1.Program.<>c.<<Main>b__0_8>d.MoveNext() in C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1\Program.cs:line 150
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at WebApplication1.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1\Middleware\ExceptionMiddleware.cs:line 21
+2024-11-27 09:24:36.532 +08:00 [INF] The requested API version is ambiguous. Requested API Versions: ["1","1.0"]
+2024-11-27 09:24:36.538 +08:00 [INF] HTTP GET /api/Countries responded 400 in 8.3661 ms
+2024-11-27 09:25:00.534 +08:00 [INF] The requested API version is ambiguous. Requested API Versions: ["1","1.0"]
+2024-11-27 09:25:00.538 +08:00 [INF] HTTP GET /api/Countries/1 responded 400 in 4.1025 ms
+2024-11-27 09:25:53.486 +08:00 [ERR] HTTP GET /api/Hotels responded 500 in 23.5218 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WebApplication1.Repository.GenericRepository`1.GetAllAsync()
+   at WebApplication1.Controllers.HotelsController.GetHotels() in C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1\Controllers\HotelsController.cs:line 26
+   at lambda_method25(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at WebApplication1.Program.<>c.<<Main>b__0_8>d.MoveNext() in C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1\Program.cs:line 150
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-11-27 09:25:53.495 +08:00 [ERR] 錯誤來自:/api/Hotels
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WebApplication1.Repository.GenericRepository`1.GetAllAsync()
+   at WebApplication1.Controllers.HotelsController.GetHotels() in C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1\Controllers\HotelsController.cs:line 26
+   at lambda_method25(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at WebApplication1.Program.<>c.<<Main>b__0_8>d.MoveNext() in C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1\Program.cs:line 150
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at WebApplication1.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1\Middleware\ExceptionMiddleware.cs:line 21
+2024-11-27 09:27:12.416 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-27 09:27:12.444 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-27 09:27:12.448 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-27 09:27:12.449 +08:00 [INF] Hosting environment: Development
+2024-11-27 09:27:12.449 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-27 09:27:12.656 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The constraint reference 'apiVersion' could not be resolved to a type. Register the constraint type with 'Microsoft.AspNetCore.Routing.RouteOptions.ConstraintMap'.
+   at Microsoft.AspNetCore.Routing.DefaultParameterPolicyFactory.Create(RoutePatternParameterPart parameter, String inlineText)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CachingParameterPolicyFactory.Create(RoutePatternParameterPart parameter, String inlineText)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CreateCandidate(Endpoint endpoint, Int32 score)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CreateCandidates(IReadOnlyList`1 endpoints)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.Build()
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.CreateMatcher(IReadOnlyList`1 endpoints)
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher..ctor(EndpointDataSource dataSource, Lifetime lifetime, Func`1 matcherBuilderFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherFactory.CreateMatcher(EndpointDataSource dataSource)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.InitializeCoreAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatcher|10_0(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task`1 matcherTask)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-11-27 09:27:12.808 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The constraint reference 'apiVersion' could not be resolved to a type. Register the constraint type with 'Microsoft.AspNetCore.Routing.RouteOptions.ConstraintMap'.
+   at Microsoft.AspNetCore.Routing.DefaultParameterPolicyFactory.Create(RoutePatternParameterPart parameter, String inlineText)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CachingParameterPolicyFactory.Create(RoutePatternParameterPart parameter, String inlineText)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CreateCandidate(Endpoint endpoint, Int32 score)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CreateCandidates(IReadOnlyList`1 endpoints)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.Build()
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.CreateMatcher(IReadOnlyList`1 endpoints)
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher..ctor(EndpointDataSource dataSource, Lifetime lifetime, Func`1 matcherBuilderFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherFactory.CreateMatcher(EndpointDataSource dataSource)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.InitializeCoreAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatcher|10_0(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task`1 matcherTask)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-11-27 09:27:20.599 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The constraint reference 'apiVersion' could not be resolved to a type. Register the constraint type with 'Microsoft.AspNetCore.Routing.RouteOptions.ConstraintMap'.
+   at Microsoft.AspNetCore.Routing.DefaultParameterPolicyFactory.Create(RoutePatternParameterPart parameter, String inlineText)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CachingParameterPolicyFactory.Create(RoutePatternParameterPart parameter, String inlineText)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CreateCandidate(Endpoint endpoint, Int32 score)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CreateCandidates(IReadOnlyList`1 endpoints)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.Build()
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.CreateMatcher(IReadOnlyList`1 endpoints)
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher..ctor(EndpointDataSource dataSource, Lifetime lifetime, Func`1 matcherBuilderFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherFactory.CreateMatcher(EndpointDataSource dataSource)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.InitializeCoreAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatcher|10_0(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task`1 matcherTask)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-11-27 09:27:21.128 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The constraint reference 'apiVersion' could not be resolved to a type. Register the constraint type with 'Microsoft.AspNetCore.Routing.RouteOptions.ConstraintMap'.
+   at Microsoft.AspNetCore.Routing.DefaultParameterPolicyFactory.Create(RoutePatternParameterPart parameter, String inlineText)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CachingParameterPolicyFactory.Create(RoutePatternParameterPart parameter, String inlineText)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CreateCandidate(Endpoint endpoint, Int32 score)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CreateCandidates(IReadOnlyList`1 endpoints)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.Build()
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.CreateMatcher(IReadOnlyList`1 endpoints)
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher..ctor(EndpointDataSource dataSource, Lifetime lifetime, Func`1 matcherBuilderFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherFactory.CreateMatcher(EndpointDataSource dataSource)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.InitializeCoreAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatcher|10_0(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task`1 matcherTask)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-11-27 09:28:22.344 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-27 09:28:22.380 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-27 09:28:22.383 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-27 09:28:22.385 +08:00 [INF] Hosting environment: Development
+2024-11-27 09:28:22.386 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-27 09:28:22.587 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The constraint reference 'apiVersion' could not be resolved to a type. Register the constraint type with 'Microsoft.AspNetCore.Routing.RouteOptions.ConstraintMap'.
+   at Microsoft.AspNetCore.Routing.DefaultParameterPolicyFactory.Create(RoutePatternParameterPart parameter, String inlineText)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CachingParameterPolicyFactory.Create(RoutePatternParameterPart parameter, String inlineText)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CreateCandidate(Endpoint endpoint, Int32 score)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CreateCandidates(IReadOnlyList`1 endpoints)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.Build()
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.CreateMatcher(IReadOnlyList`1 endpoints)
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher..ctor(EndpointDataSource dataSource, Lifetime lifetime, Func`1 matcherBuilderFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherFactory.CreateMatcher(EndpointDataSource dataSource)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.InitializeCoreAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatcher|10_0(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task`1 matcherTask)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-11-27 09:28:22.692 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The constraint reference 'apiVersion' could not be resolved to a type. Register the constraint type with 'Microsoft.AspNetCore.Routing.RouteOptions.ConstraintMap'.
+   at Microsoft.AspNetCore.Routing.DefaultParameterPolicyFactory.Create(RoutePatternParameterPart parameter, String inlineText)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CachingParameterPolicyFactory.Create(RoutePatternParameterPart parameter, String inlineText)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CreateCandidate(Endpoint endpoint, Int32 score)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CreateCandidates(IReadOnlyList`1 endpoints)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.Build()
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.CreateMatcher(IReadOnlyList`1 endpoints)
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher..ctor(EndpointDataSource dataSource, Lifetime lifetime, Func`1 matcherBuilderFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherFactory.CreateMatcher(EndpointDataSource dataSource)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.InitializeCoreAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatcher|10_0(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task`1 matcherTask)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-11-27 09:28:34.339 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-27 09:28:34.386 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-27 09:28:34.394 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-27 09:28:34.396 +08:00 [INF] Hosting environment: Development
+2024-11-27 09:28:34.397 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-27 09:28:35.499 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The constraint reference 'apiVersion' could not be resolved to a type. Register the constraint type with 'Microsoft.AspNetCore.Routing.RouteOptions.ConstraintMap'.
+   at Microsoft.AspNetCore.Routing.DefaultParameterPolicyFactory.Create(RoutePatternParameterPart parameter, String inlineText)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CachingParameterPolicyFactory.Create(RoutePatternParameterPart parameter, String inlineText)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CreateCandidate(Endpoint endpoint, Int32 score)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CreateCandidates(IReadOnlyList`1 endpoints)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.Build()
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.CreateMatcher(IReadOnlyList`1 endpoints)
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher..ctor(EndpointDataSource dataSource, Lifetime lifetime, Func`1 matcherBuilderFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherFactory.CreateMatcher(EndpointDataSource dataSource)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.InitializeCoreAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatcher|10_0(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task`1 matcherTask)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-11-27 09:28:35.776 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The constraint reference 'apiVersion' could not be resolved to a type. Register the constraint type with 'Microsoft.AspNetCore.Routing.RouteOptions.ConstraintMap'.
+   at Microsoft.AspNetCore.Routing.DefaultParameterPolicyFactory.Create(RoutePatternParameterPart parameter, String inlineText)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CachingParameterPolicyFactory.Create(RoutePatternParameterPart parameter, String inlineText)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CreateCandidate(Endpoint endpoint, Int32 score)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CreateCandidates(IReadOnlyList`1 endpoints)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.Build()
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.CreateMatcher(IReadOnlyList`1 endpoints)
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher..ctor(EndpointDataSource dataSource, Lifetime lifetime, Func`1 matcherBuilderFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherFactory.CreateMatcher(EndpointDataSource dataSource)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.InitializeCoreAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatcher|10_0(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task`1 matcherTask)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-11-27 09:29:58.945 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-27 09:29:58.987 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-27 09:29:59.012 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-27 09:29:59.014 +08:00 [INF] Hosting environment: Development
+2024-11-27 09:29:59.016 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-27 09:30:47.131 +08:00 [ERR] HTTP GET /api/Countries responded 500 in 41289.0642 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WebApplication1.Repository.GenericRepository`1.GetAllAsync()
+   at WebApplication1.Controllers.CountriesController.GetCountries() in C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1\Controllers\CountriesController.cs:line 34
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at WebApplication1.Program.<>c.<<Main>b__0_6>d.MoveNext() in C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1\Program.cs:line 150
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-11-27 09:30:48.562 +08:00 [ERR] 錯誤來自:/api/Countries
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WebApplication1.Repository.GenericRepository`1.GetAllAsync()
+   at WebApplication1.Controllers.CountriesController.GetCountries() in C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1\Controllers\CountriesController.cs:line 34
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at WebApplication1.Program.<>c.<<Main>b__0_6>d.MoveNext() in C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1\Program.cs:line 150
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at WebApplication1.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1\Middleware\ExceptionMiddleware.cs:line 21
+2024-11-27 09:32:31.290 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-27 09:32:31.328 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-27 09:32:31.334 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-27 09:32:31.335 +08:00 [INF] Hosting environment: Development
+2024-11-27 09:32:31.336 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-27 09:35:00.455 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-27 09:35:00.499 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-27 09:35:00.504 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-27 09:35:00.507 +08:00 [INF] Hosting environment: Development
+2024-11-27 09:35:00.508 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-27 09:35:08.768 +08:00 [INF] HTTP GET /api/Countries responded 200 in 1674.8236 ms
+2024-11-27 09:37:03.890 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-27 09:37:03.938 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-27 09:37:03.942 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-27 09:37:03.944 +08:00 [INF] Hosting environment: Development
+2024-11-27 09:37:03.946 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-27 09:37:06.192 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/Countries" for actions - WebApplication1.Controllers.CountriesController.GetCountries (WebApplication1),WebApplication1.Controllers.CountriesController.GetPagedCountries (WebApplication1). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-11-27 09:37:54.522 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-27 09:37:54.561 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-27 09:37:54.565 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-27 09:37:54.567 +08:00 [INF] Hosting environment: Development
+2024-11-27 09:37:54.568 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-27 09:39:19.362 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-27 09:39:19.440 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-27 09:39:19.446 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-27 09:39:19.448 +08:00 [INF] Hosting environment: Development
+2024-11-27 09:39:19.450 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-27 09:39:36.151 +08:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-11-27 09:39:36.157 +08:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-11-27 09:39:36.266 +08:00 [INF] HTTP GET /api/Countries responded 200 in 2043.8155 ms
+2024-11-27 09:40:05.278 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-27 09:40:05.332 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-27 09:40:05.337 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-27 09:40:05.339 +08:00 [INF] Hosting environment: Development
+2024-11-27 09:40:05.341 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-27 09:40:56.639 +08:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-11-27 09:40:56.645 +08:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-11-27 09:40:56.776 +08:00 [INF] HTTP GET /api/Countries responded 200 in 1457.6397 ms
+2024-11-27 09:41:07.255 +08:00 [INF] HTTP GET /api/Countries responded 200 in 3.3773 ms
+2024-11-27 09:41:14.431 +08:00 [INF] HTTP GET /api/Countries responded 200 in 0.6964 ms
+2024-11-27 09:42:28.203 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-27 09:42:28.247 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-27 09:42:28.253 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-27 09:42:28.255 +08:00 [INF] Hosting environment: Development
+2024-11-27 09:42:28.255 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-27 09:42:41.448 +08:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-11-27 09:42:41.453 +08:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-11-27 09:42:41.546 +08:00 [INF] HTTP GET /api/Countries responded 200 in 1301.1940 ms
+2024-11-27 09:42:46.061 +08:00 [INF] HTTP GET /api/Countries responded 200 in 99.7878 ms
+2024-11-27 09:43:12.821 +08:00 [INF] HTTP GET /api/Countries responded 200 in 42.9381 ms
+2024-11-27 09:43:18.601 +08:00 [INF] HTTP GET /api/Countries responded 200 in 27.9549 ms
+2024-11-27 09:43:21.190 +08:00 [INF] HTTP GET /api/Countries responded 200 in 21.9458 ms
+2024-11-27 09:43:31.333 +08:00 [INF] HTTP GET /api/Countries responded 200 in 28.2137 ms
+2024-11-27 09:43:37.702 +08:00 [INF] HTTP GET /api/Countries responded 200 in 22.3358 ms
+2024-11-27 09:43:44.915 +08:00 [INF] HTTP GET /api/Countries responded 200 in 21.2681 ms
+2024-11-27 09:45:16.472 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-27 09:45:16.520 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-27 09:45:16.525 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-27 09:45:16.527 +08:00 [INF] Hosting environment: Development
+2024-11-27 09:45:16.528 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-27 09:45:25.573 +08:00 [INF] HTTP GET /api/Countries/GetAll responded 200 in 1385.6090 ms
+2024-11-27 09:45:40.762 +08:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-11-27 09:45:40.768 +08:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-11-27 09:45:40.816 +08:00 [INF] HTTP GET /api/Countries responded 200 in 266.3006 ms
+2024-11-27 09:45:47.006 +08:00 [INF] HTTP GET /api/Countries responded 200 in 43.6456 ms
+2024-11-27 09:45:53.109 +08:00 [INF] HTTP GET /api/Countries responded 200 in 18.9443 ms
+2024-11-27 09:45:57.952 +08:00 [INF] HTTP GET /api/Countries responded 200 in 32.1550 ms
+2024-11-27 09:53:26.862 +08:00 [INF] HTTP GET /api/Countries responded 200 in 67.3295 ms
+2024-11-27 09:53:37.233 +08:00 [INF] HTTP GET /api/Countries responded 200 in 35.3019 ms
+2024-11-27 09:53:57.043 +08:00 [INF] HTTP GET /api/Countries responded 200 in 41.4269 ms
+2024-11-27 09:57:04.580 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-27 09:57:04.619 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-27 09:57:04.623 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-27 09:57:04.624 +08:00 [INF] Hosting environment: Development
+2024-11-27 09:57:04.625 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-27 09:57:34.079 +08:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-11-27 09:57:34.084 +08:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-11-27 09:57:34.150 +08:00 [INF] HTTP GET /api/Countries responded 200 in 1395.1126 ms
+2024-11-27 09:57:40.614 +08:00 [INF] HTTP GET /api/Countries responded 200 in 68.6062 ms
+2024-11-27 09:57:45.183 +08:00 [INF] HTTP GET /api/Countries responded 200 in 34.3617 ms
+2024-11-27 09:57:47.403 +08:00 [INF] HTTP GET /api/Countries responded 200 in 26.9695 ms
+2024-11-27 09:59:36.655 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-27 09:59:36.695 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-27 09:59:36.699 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-27 09:59:36.701 +08:00 [INF] Hosting environment: Development
+2024-11-27 09:59:36.702 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-27 10:00:42.818 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-27 10:00:42.874 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-27 10:00:42.883 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-27 10:00:42.886 +08:00 [INF] Hosting environment: Development
+2024-11-27 10:00:42.887 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-27 10:00:59.959 +08:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-11-27 10:01:00.040 +08:00 [INF] HTTP GET /api/Countries responded 200 in 1416.5814 ms
+2024-11-27 10:01:06.870 +08:00 [INF] HTTP GET /api/Countries responded 200 in 67.8283 ms
+2024-11-27 10:01:19.300 +08:00 [INF] HTTP GET /api/Countries responded 200 in 32.5530 ms
+2024-11-27 10:01:24.799 +08:00 [INF] HTTP GET /api/Countries responded 200 in 32.4468 ms
+2024-11-27 10:04:11.426 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-27 10:04:11.470 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-27 10:04:11.476 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-27 10:04:11.479 +08:00 [INF] Hosting environment: Development
+2024-11-27 10:04:11.479 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-27 10:05:09.817 +08:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-11-27 10:05:09.822 +08:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-11-27 10:05:09.895 +08:00 [INF] HTTP GET /api/Countries responded 200 in 1372.3727 ms
+2024-11-27 10:05:16.710 +08:00 [INF] HTTP GET /api/Countries responded 200 in 72.6994 ms
+2024-11-27 10:05:19.562 +08:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-11-27 10:05:19.563 +08:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-11-27 10:05:19.570 +08:00 [INF] HTTP GET /api/Countries responded 200 in 42.6801 ms
+2024-11-27 10:12:24.376 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-27 10:12:24.411 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-27 10:12:24.416 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-27 10:12:24.417 +08:00 [INF] Hosting environment: Development
+2024-11-27 10:12:24.418 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-27 10:12:44.575 +08:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-11-27 10:12:44.579 +08:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-11-27 10:12:44.638 +08:00 [INF] HTTP GET /api/Countries responded 200 in 1167.3420 ms
+2024-11-27 10:12:49.982 +08:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-11-27 10:12:49.985 +08:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-11-27 10:12:49.990 +08:00 [INF] HTTP GET /api/Countries responded 200 in 71.1862 ms
+2024-11-27 10:12:56.213 +08:00 [INF] HTTP GET /api/Countries responded 200 in 35.7053 ms
+2024-11-27 10:13:00.813 +08:00 [INF] HTTP GET /api/Countries responded 200 in 22.8530 ms
+2024-11-27 10:13:04.560 +08:00 [INF] HTTP GET /api/Countries responded 200 in 20.2457 ms
+2024-11-27 10:28:25.600 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-27 10:28:25.639 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-27 10:28:25.644 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-27 10:28:25.645 +08:00 [INF] Hosting environment: Development
+2024-11-27 10:28:25.646 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-27 10:28:40.453 +08:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-11-27 10:28:40.459 +08:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-11-27 10:28:40.535 +08:00 [INF] HTTP GET /api/Hotels responded 200 in 1115.3313 ms
+2024-11-27 10:28:47.229 +08:00 [INF] HTTP GET /api/Hotels responded 200 in 80.9608 ms
+2024-11-27 10:28:52.433 +08:00 [ERR] Failed executing DbCommand (2ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `h`.`Id`, `h`.`Name`, `h`.`Address`, `h`.`Rating`, `h`.`CountryId`
+FROM `Hotels` AS `h`
+LIMIT @__p_1 OFFSET @__p_0
+2024-11-27 10:28:52.459 +08:00 [ERR] An exception occurred while iterating over the results of a query for context type 'ClassLibrary1.AppDbContext'.
+MySqlConnector.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1' at line 3
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.InitAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 483
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 357
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 350
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+MySqlConnector.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1' at line 3
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.InitAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 483
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 357
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 350
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2024-11-27 10:28:52.521 +08:00 [ERR] HTTP GET /api/Hotels responded 500 in 134.9306 ms
+MySqlConnector.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1' at line 3
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.InitAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 483
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 357
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 350
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at WebApplication1.Repository.GenericRepository`1.GetAllAsync[TResult](QueryParameters queryParameters) in C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1\Repository\GenericRepository.cs:line 56
+   at WebApplication1.Controllers.HotelsController.GetPagedHotels(QueryParametersDto queryParametersDto) in C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1\Controllers\HotelsController.cs:line 40
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-11-27 10:28:52.632 +08:00 [ERR] 錯誤來自:/api/Hotels
+MySqlConnector.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1' at line 3
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.InitAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 483
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 357
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 350
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at WebApplication1.Repository.GenericRepository`1.GetAllAsync[TResult](QueryParameters queryParameters) in C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1\Repository\GenericRepository.cs:line 56
+   at WebApplication1.Controllers.HotelsController.GetPagedHotels(QueryParametersDto queryParametersDto) in C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1\Controllers\HotelsController.cs:line 40
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at WebApplication1.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1\Middleware\ExceptionMiddleware.cs:line 21
+2024-11-27 10:29:02.189 +08:00 [INF] HTTP GET /api/Hotels responded 200 in 18.1800 ms
+2024-11-27 10:29:06.925 +08:00 [INF] HTTP GET /api/Hotels responded 200 in 16.1944 ms
+2024-11-27 10:29:11.859 +08:00 [INF] HTTP GET /api/Hotels responded 200 in 15.7066 ms
+2024-11-27 10:29:13.849 +08:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-11-27 10:29:13.852 +08:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-11-27 10:29:13.857 +08:00 [INF] HTTP GET /api/Hotels responded 200 in 22.8748 ms
+2024-11-27 10:30:09.249 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-27 10:30:09.302 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-27 10:30:09.306 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-27 10:30:09.308 +08:00 [INF] Hosting environment: Development
+2024-11-27 10:30:09.309 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-27 10:30:30.138 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-27 10:30:30.201 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-27 10:30:30.208 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-27 10:30:30.209 +08:00 [INF] Hosting environment: Development
+2024-11-27 10:30:30.211 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-27 10:31:02.954 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-27 10:31:02.989 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-27 10:31:02.992 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-27 10:31:02.994 +08:00 [INF] Hosting environment: Development
+2024-11-27 10:31:02.995 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-27 11:11:21.534 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-27 11:11:21.587 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-27 11:11:21.595 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-27 11:11:21.599 +08:00 [INF] Hosting environment: Development
+2024-11-27 11:11:21.600 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-27 11:11:37.846 +08:00 [INF] HTTP GET /api/Countries/GetAll responded 200 in 1412.2396 ms
+2024-11-27 11:12:12.180 +08:00 [INF] HTTP GET /api/Countries responded 405 in 0.2991 ms
+2024-11-27 11:12:25.428 +08:00 [INF] HTTP GET /api/Countries/GetAll responded 200 in 66.9735 ms
+2024-11-27 11:26:04.403 +08:00 [INF] HTTP GET /api/Countries/GetAll responded 200 in 113.3642 ms
+2024-11-27 11:27:20.002 +08:00 [INF] HTTP GET /api/Countries/GetAll responded 200 in 14.6849 ms
+2024-11-27 11:33:32.753 +08:00 [INF] HTTP GET /api/Countries/GetAll responded 400 in 44.5023 ms
+2024-11-27 11:33:39.086 +08:00 [INF] HTTP GET /api/Countries/GetAll responded 400 in 11.5594 ms
+2024-11-27 11:33:46.969 +08:00 [INF] HTTP GET /api/Countries/GetAll responded 200 in 50.2850 ms
+2024-11-27 11:34:13.125 +08:00 [INF] HTTP GET /api/Countries/GetAll responded 200 in 20.0922 ms
+2024-11-27 11:34:37.869 +08:00 [INF] HTTP GET /api/Countries/GetAll responded 200 in 18.0503 ms
+2024-11-27 11:34:54.937 +08:00 [INF] HTTP GET /api/Countries/GetAll responded 200 in 16.1352 ms
+2024-11-27 11:44:54.278 +08:00 [INF] HTTP GET /api/Countries/GetAll responded 200 in 39.4817 ms
+2024-11-27 11:45:00.124 +08:00 [INF] HTTP GET /api/Countries/GetAll responded 200 in 19.7133 ms

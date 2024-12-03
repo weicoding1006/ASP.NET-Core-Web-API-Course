@@ -1,0 +1,5 @@
+2024-10-28 10:45:31.033 +08:00 [INF] Now listening on: https://localhost:7225
+2024-10-28 10:45:31.098 +08:00 [INF] Now listening on: http://localhost:5056
+2024-10-28 10:45:31.104 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-28 10:45:31.106 +08:00 [INF] Hosting environment: Development
+2024-10-28 10:45:31.108 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1

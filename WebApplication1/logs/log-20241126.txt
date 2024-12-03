@@ -1,0 +1,72 @@
+2024-11-26 09:49:12.123 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-26 09:49:12.163 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-26 09:49:12.167 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-26 09:49:12.170 +08:00 [INF] Hosting environment: Development
+2024-11-26 09:49:12.171 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-26 09:49:21.450 +08:00 [INF] HTTP GET /api/Countries responded 200 in 1364.6455 ms
+2024-11-26 10:32:30.526 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-26 10:32:30.569 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-26 10:32:30.575 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-26 10:32:30.577 +08:00 [INF] Hosting environment: Development
+2024-11-26 10:32:30.579 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-26 10:32:43.125 +08:00 [INF] HTTP GET /api/Test responded 200 in 19.8627 ms
+2024-11-26 10:32:54.958 +08:00 [INF] HTTP GET /api/Test responded 200 in 2.4585 ms
+2024-11-26 12:18:34.319 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-26 12:18:34.374 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-26 12:18:34.381 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-26 12:18:34.382 +08:00 [INF] Hosting environment: Development
+2024-11-26 12:18:34.384 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-26 12:18:54.767 +08:00 [INF] HTTP GET /api/v1/Test responded 200 in 35.4557 ms
+2024-11-26 12:19:00.212 +08:00 [INF] HTTP GET /api/v1/Test responded 400 in 1.9980 ms
+2024-11-26 12:20:59.207 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-26 12:20:59.249 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-26 12:20:59.255 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-26 12:20:59.257 +08:00 [INF] Hosting environment: Development
+2024-11-26 12:20:59.258 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-26 12:21:08.987 +08:00 [INF] HTTP GET /api/v2/TestV2 responded 200 in 21.9236 ms
+2024-11-26 12:22:25.311 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-26 12:22:25.355 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-26 12:22:25.361 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-26 12:22:25.362 +08:00 [INF] Hosting environment: Development
+2024-11-26 12:22:25.363 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-26 12:22:33.418 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-26 12:22:33.460 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-26 12:22:33.466 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-26 12:22:33.468 +08:00 [INF] Hosting environment: Development
+2024-11-26 12:22:33.469 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-26 12:23:47.958 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-26 12:23:48.048 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-26 12:23:48.062 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-26 12:23:48.068 +08:00 [INF] Hosting environment: Development
+2024-11-26 12:23:48.070 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-26 12:23:49.566 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/v{version}/test" for actions - TestController.Get (WebApplication1),TestV2Controller.Get (WebApplication1). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-11-26 12:23:52.702 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/v{version}/test" for actions - TestController.Get (WebApplication1),TestV2Controller.Get (WebApplication1). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-11-26 12:24:46.110 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-26 12:24:46.181 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-26 12:24:46.186 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-26 12:24:46.188 +08:00 [INF] Hosting environment: Development
+2024-11-26 12:24:46.189 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-26 12:24:55.432 +08:00 [INF] HTTP GET /api/v2/test responded 200 in 38.6789 ms
+2024-11-26 12:25:00.573 +08:00 [INF] HTTP GET /api/v1/test responded 200 in 4.9344 ms
+2024-11-26 16:46:54.545 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-26 16:46:54.592 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-26 16:46:54.597 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-26 16:46:54.599 +08:00 [INF] Hosting environment: Development
+2024-11-26 16:46:54.600 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-26 16:47:02.516 +08:00 [INF] HTTP GET /api/Countries responded 200 in 1613.4587 ms

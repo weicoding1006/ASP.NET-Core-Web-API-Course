@@ -1,0 +1,74 @@
+2024-11-11 10:19:24.486 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-11 10:19:24.564 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-11 10:19:24.572 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-11 10:19:24.575 +08:00 [INF] Hosting environment: Development
+2024-11-11 10:19:24.577 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-11 10:43:30.139 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-11 10:43:30.206 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-11 10:43:30.214 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-11 10:43:30.217 +08:00 [INF] Hosting environment: Development
+2024-11-11 10:43:30.219 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-11 10:43:55.678 +08:00 [ERR] HTTP GET /api/Hotels responded 500 in 29.8792 ms
+System.InvalidOperationException: Unable to resolve service for type 'WebApplication1.Contracts.IHotelsRepository' while attempting to activate 'WebApplication1.Controllers.HotelsController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-11-11 10:43:55.690 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'WebApplication1.Contracts.IHotelsRepository' while attempting to activate 'WebApplication1.Controllers.HotelsController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-11-11 10:44:26.039 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-11 10:44:26.163 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-11 10:44:26.198 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-11 10:44:26.202 +08:00 [INF] Hosting environment: Development
+2024-11-11 10:44:26.258 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-11 10:44:32.531 +08:00 [INF] HTTP GET /api/Hotels responded 200 in 1432.6754 ms
+2024-11-11 10:45:15.665 +08:00 [INF] HTTP GET /api/Hotels responded 200 in 102.1650 ms
+2024-11-11 10:54:36.134 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-11 10:54:36.230 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-11 10:54:36.243 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-11 10:54:36.279 +08:00 [INF] Hosting environment: Development
+2024-11-11 10:54:36.289 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-11 10:54:44.399 +08:00 [INF] HTTP GET /api/Hotels/1 responded 200 in 969.3447 ms
+2024-11-11 11:17:50.895 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-11 11:17:51.002 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-11 11:17:51.012 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-11 11:17:51.015 +08:00 [INF] Hosting environment: Development
+2024-11-11 11:17:51.017 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-11 11:42:12.895 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-11 11:42:13.015 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-11 11:42:13.041 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-11 11:42:13.048 +08:00 [INF] Hosting environment: Development
+2024-11-11 11:42:13.068 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-11 11:42:22.724 +08:00 [INF] HTTP GET /api/Hotels responded 200 in 1641.9280 ms
+2024-11-11 11:42:38.099 +08:00 [INF] HTTP GET /api/Hotels/1 responded 200 in 171.0551 ms
+2024-11-11 11:43:55.050 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-11 11:43:55.121 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-11 11:43:55.148 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-11 11:43:55.151 +08:00 [INF] Hosting environment: Development
+2024-11-11 11:43:55.155 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-11 11:45:26.641 +08:00 [INF] HTTP PUT /api/Hotels/1 responded 200 in 1116.1355 ms
+2024-11-11 11:46:09.785 +08:00 [INF] HTTP POST /api/Hotels responded 201 in 147.1283 ms
+2024-11-11 11:46:18.344 +08:00 [INF] HTTP GET /api/Hotels responded 200 in 41.0878 ms
+2024-11-11 11:46:26.336 +08:00 [INF] HTTP DELETE /api/Hotels/1 responded 204 in 34.7549 ms

@@ -1,0 +1,117 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\2309013\\Desktop\\\u5F8C\u7AEFapi\u8AB2\u7A0B\\WebApplication1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9D9F6824-0660-4372-B7B5-6D50B63F4BA9}|WebApplication1\\WebApplication1.csproj|c:\\users\\2309013\\desktop\\\u5F8C\u7AEFapi\u8AB2\u7A0B\\webapplication1\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D9F6824-0660-4372-B7B5-6D50B63F4BA9}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D9F6824-0660-4372-B7B5-6D50B63F4BA9}|WebApplication1\\WebApplication1.csproj|c:\\users\\2309013\\desktop\\\u5F8C\u7AEFapi\u8AB2\u7A0B\\webapplication1\\webapplication1\\controllers\\countriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D9F6824-0660-4372-B7B5-6D50B63F4BA9}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\countriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D9F6824-0660-4372-B7B5-6D50B63F4BA9}|WebApplication1\\WebApplication1.csproj|c:\\users\\2309013\\desktop\\\u5F8C\u7AEFapi\u8AB2\u7A0B\\webapplication1\\webapplication1\\controllers\\hotelscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D9F6824-0660-4372-B7B5-6D50B63F4BA9}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\hotelscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D9F6824-0660-4372-B7B5-6D50B63F4BA9}|WebApplication1\\WebApplication1.csproj|c:\\users\\2309013\\desktop\\\u5F8C\u7AEFapi\u8AB2\u7A0B\\webapplication1\\webapplication1\\repository\\countriesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D9F6824-0660-4372-B7B5-6D50B63F4BA9}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\repository\\countriesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D9F6824-0660-4372-B7B5-6D50B63F4BA9}|WebApplication1\\WebApplication1.csproj|c:\\users\\2309013\\desktop\\\u5F8C\u7AEFapi\u8AB2\u7A0B\\webapplication1\\webapplication1\\contracts\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D9F6824-0660-4372-B7B5-6D50B63F4BA9}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\contracts\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D9F6824-0660-4372-B7B5-6D50B63F4BA9}|WebApplication1\\WebApplication1.csproj|c:\\users\\2309013\\desktop\\\u5F8C\u7AEFapi\u8AB2\u7A0B\\webapplication1\\webapplication1\\repository\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D9F6824-0660-4372-B7B5-6D50B63F4BA9}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\repository\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CountriesRepository.cs",
+              "DocumentMoniker": "C:\\Users\\2309013\\Desktop\\\u5F8C\u7AEFapi\u8AB2\u7A0B\\WebApplication1\\WebApplication1\\Repository\\CountriesRepository.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Repository\\CountriesRepository.cs",
+              "ToolTip": "C:\\Users\\2309013\\Desktop\\\u5F8C\u7AEFapi\u8AB2\u7A0B\\WebApplication1\\WebApplication1\\Repository\\CountriesRepository.cs",
+              "RelativeToolTip": "WebApplication1\\Repository\\CountriesRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T02:12:52.667Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "C:\\Users\\2309013\\Desktop\\\u5F8C\u7AEFapi\u8AB2\u7A0B\\WebApplication1\\WebApplication1\\Repository\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Repository\\GenericRepository.cs",
+              "ToolTip": "C:\\Users\\2309013\\Desktop\\\u5F8C\u7AEFapi\u8AB2\u7A0B\\WebApplication1\\WebApplication1\\Repository\\GenericRepository.cs",
+              "RelativeToolTip": "WebApplication1\\Repository\\GenericRepository.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAYwGYAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T01:46:11.28Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IGenericRepository.cs",
+              "DocumentMoniker": "C:\\Users\\2309013\\Desktop\\\u5F8C\u7AEFapi\u8AB2\u7A0B\\WebApplication1\\WebApplication1\\Contracts\\IGenericRepository.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Contracts\\IGenericRepository.cs",
+              "ToolTip": "C:\\Users\\2309013\\Desktop\\\u5F8C\u7AEFapi\u8AB2\u7A0B\\WebApplication1\\WebApplication1\\Contracts\\IGenericRepository.cs",
+              "RelativeToolTip": "WebApplication1\\Contracts\\IGenericRepository.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAcAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T01:25:04.008Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\2309013\\Desktop\\\u5F8C\u7AEFapi\u8AB2\u7A0B\\WebApplication1\\WebApplication1\\Program.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Program.cs",
+              "ToolTip": "C:\\Users\\2309013\\Desktop\\\u5F8C\u7AEFapi\u8AB2\u7A0B\\WebApplication1\\WebApplication1\\Program.cs",
+              "RelativeToolTip": "WebApplication1\\Program.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAAwDQAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T03:00:52.828Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CountriesController.cs",
+              "DocumentMoniker": "C:\\Users\\2309013\\Desktop\\\u5F8C\u7AEFapi\u8AB2\u7A0B\\WebApplication1\\WebApplication1\\Controllers\\CountriesController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\CountriesController.cs",
+              "ToolTip": "C:\\Users\\2309013\\Desktop\\\u5F8C\u7AEFapi\u8AB2\u7A0B\\WebApplication1\\WebApplication1\\Controllers\\CountriesController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\CountriesController.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAiwCEAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T02:30:55.453Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HotelsController.cs",
+              "DocumentMoniker": "C:\\Users\\2309013\\Desktop\\\u5F8C\u7AEFapi\u8AB2\u7A0B\\WebApplication1\\WebApplication1\\Controllers\\HotelsController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\HotelsController.cs",
+              "ToolTip": "C:\\Users\\2309013\\Desktop\\\u5F8C\u7AEFapi\u8AB2\u7A0B\\WebApplication1\\WebApplication1\\Controllers\\HotelsController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\HotelsController.cs",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAiwFsAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T02:23:31.894Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

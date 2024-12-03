@@ -1,0 +1,142 @@
+2024-11-05 16:48:18.173 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-05 16:48:18.251 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-05 16:48:18.260 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-05 16:48:18.262 +08:00 [INF] Hosting environment: Development
+2024-11-05 16:48:18.266 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-05 16:48:48.899 +08:00 [INF] HTTP GET /api/Countries responded 200 in 1086.2030 ms
+2024-11-05 16:54:58.995 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-05 16:54:59.045 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-05 16:54:59.053 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-05 16:54:59.055 +08:00 [INF] Hosting environment: Development
+2024-11-05 16:54:59.056 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-05 16:55:03.020 +08:00 [ERR] HTTP GET /api/Countries responded 500 in 943.1994 ms
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+List`1 -> GetCountryDto
+System.Collections.Generic.List`1[[ClassLibrary1.Models.Country, ClassLibrary1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> ClassLibrary1.Dtos.GetCountryDto
+   at lambda_method58(Closure, Object, GetCountryDto, ResolutionContext)
+   at WebApplication1.Controllers.CountriesController.GetCountries() in C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1\Controllers\CountriesController.cs:line 28
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-11-05 16:55:03.042 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+List`1 -> GetCountryDto
+System.Collections.Generic.List`1[[ClassLibrary1.Models.Country, ClassLibrary1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> ClassLibrary1.Dtos.GetCountryDto
+   at lambda_method58(Closure, Object, GetCountryDto, ResolutionContext)
+   at WebApplication1.Controllers.CountriesController.GetCountries() in C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1\Controllers\CountriesController.cs:line 28
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-11-05 16:56:03.324 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-05 16:56:03.358 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-05 16:56:03.362 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-05 16:56:03.364 +08:00 [INF] Hosting environment: Development
+2024-11-05 16:56:03.364 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-05 16:56:07.395 +08:00 [ERR] HTTP GET /api/Countries responded 500 in 874.4918 ms
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[ClassLibrary1.Models.Country, ClassLibrary1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[ClassLibrary1.Dtos.GetCountryDto, ClassLibrary1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Country -> GetCountryDto
+ClassLibrary1.Models.Country -> ClassLibrary1.Dtos.GetCountryDto
+   at lambda_method59(Closure, Country, GetCountryDto, ResolutionContext)
+   at lambda_method58(Closure, Object, List`1, ResolutionContext)
+   --- End of inner exception stack trace ---
+   at lambda_method58(Closure, Object, List`1, ResolutionContext)
+   at WebApplication1.Controllers.CountriesController.GetCountries() in C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1\Controllers\CountriesController.cs:line 28
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-11-05 16:56:07.417 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[ClassLibrary1.Models.Country, ClassLibrary1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[ClassLibrary1.Dtos.GetCountryDto, ClassLibrary1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Country -> GetCountryDto
+ClassLibrary1.Models.Country -> ClassLibrary1.Dtos.GetCountryDto
+   at lambda_method59(Closure, Country, GetCountryDto, ResolutionContext)
+   at lambda_method58(Closure, Object, List`1, ResolutionContext)
+   --- End of inner exception stack trace ---
+   at lambda_method58(Closure, Object, List`1, ResolutionContext)
+   at WebApplication1.Controllers.CountriesController.GetCountries() in C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1\Controllers\CountriesController.cs:line 28
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-11-05 16:56:47.456 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-05 16:56:47.505 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-05 16:56:47.513 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-05 16:56:47.516 +08:00 [INF] Hosting environment: Development
+2024-11-05 16:56:47.518 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-05 16:56:51.927 +08:00 [INF] HTTP GET /api/Countries responded 200 in 1238.2149 ms
+2024-11-05 17:26:39.941 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-05 17:26:40.012 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-05 17:26:40.019 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-05 17:26:40.021 +08:00 [INF] Hosting environment: Development
+2024-11-05 17:26:40.023 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-05 17:26:45.964 +08:00 [INF] HTTP GET /api/Countries responded 200 in 1029.1321 ms
+2024-11-05 17:26:55.307 +08:00 [INF] HTTP GET /api/Countries/1 responded 200 in 160.2111 ms
+2024-11-05 17:35:09.269 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-05 17:35:09.311 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-05 17:35:09.318 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-05 17:35:09.320 +08:00 [INF] Hosting environment: Development
+2024-11-05 17:35:09.322 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-05 17:35:18.352 +08:00 [INF] HTTP GET /api/Countries/1 responded 200 in 1031.4831 ms
+2024-11-05 17:39:53.379 +08:00 [INF] HTTP GET /api/Countries/2 responded 200 in 37.8409 ms
+2024-11-05 17:39:56.581 +08:00 [INF] HTTP GET /api/Countries/3 responded 404 in 72.6093 ms
+2024-11-05 17:39:59.964 +08:00 [INF] HTTP GET /api/Countries/2 responded 200 in 15.0411 ms

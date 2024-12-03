@@ -1,0 +1,13 @@
+2024-11-13 11:38:17.873 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-13 11:38:17.923 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-13 11:38:17.929 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-13 11:38:17.931 +08:00 [INF] Hosting environment: Development
+2024-11-13 11:38:17.932 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-11-13 11:39:13.656 +08:00 [INF] HTTP POST /api/Account/register responded 400 in 450.2497 ms
+2024-11-13 11:39:51.667 +08:00 [INF] HTTP POST /api/Account/register responded 400 in 26.9984 ms
+2024-11-13 11:40:02.434 +08:00 [INF] HTTP POST /api/Account/register responded 200 in 1242.2736 ms
+2024-11-13 12:19:08.307 +08:00 [INF] Now listening on: https://localhost:7225
+2024-11-13 12:19:08.369 +08:00 [INF] Now listening on: http://localhost:5056
+2024-11-13 12:19:08.381 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-13 12:19:08.383 +08:00 [INF] Hosting environment: Development
+2024-11-13 12:19:08.385 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1

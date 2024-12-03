@@ -1,0 +1,11 @@
+2024-12-03 09:12:29.000 +08:00 [INF] Now listening on: https://localhost:7225
+2024-12-03 09:12:29.052 +08:00 [INF] Now listening on: http://localhost:5056
+2024-12-03 09:12:29.060 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-03 09:12:29.062 +08:00 [INF] Hosting environment: Development
+2024-12-03 09:12:29.063 +08:00 [INF] Content root path: C:\Users\2309013\Desktop\後端api課程\WebApplication1\WebApplication1
+2024-12-03 09:12:38.040 +08:00 [INF] HTTP GET /api/Countries/GetAll responded 401 in 14.1824 ms
+2024-12-03 09:12:50.702 +08:00 [INF] HTTP GET /api/Hotels/GetAll responded 200 in 1362.1310 ms
+2024-12-03 09:13:02.614 +08:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-12-03 09:13:02.620 +08:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-12-03 09:13:02.664 +08:00 [INF] HTTP GET /api/Hotels/Paged responded 200 in 229.3799 ms
+2024-12-03 09:13:08.179 +08:00 [INF] HTTP GET /api/Hotels/Paged responded 200 in 47.0093 ms
